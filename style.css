@@ -1,0 +1,108 @@
+body {
+  display: grid;
+  background-color: red;
+  grid-template-areas:
+    "nav header header"
+    "nav article ads"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  background-image:url('differentFire.gif');
+  background-size: 100% 100%;
+  background-repeat:repeat;
+  }
+header, footer, section, article, nav, div {
+  padding: 1.2em;
+  background: darkred;
+  border-radius: 10px;
+  }
+#pageHeader {
+  grid-area: header;
+  height: auto;
+    position: relative
+  }
+#pageFooter {
+  grid-area: footer;
+  text-align: center;
+  }
+#mainArticle {
+
+  grid-area: article;
+  //word-breaK: break-all;
+  /*word-wrap: break-word;*/
+  }
+#mainNav {
+  grid-area: nav;
+  display: grid;
+  grid-gap: 10px;
+  text-align: center;
+  }
+#siteAds {
+  grid-area: ads;
+  text-align: center;
+  }
+#startCalculation {
+  background-image: url('differentFire.gif');
+  background-size: 100% 100%;
+  color: white;
+
+}
+#userSin {
+  background-image: url('differentFire.gif');
+  background-size: 100% 100%;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+#oneSin {
+  background-color: grey;
+  border-radius: 3px;
+  text-decoration: none;
+  text-decoration-color: black;
+  align-self: center;
+  //word-breaK: break-all;
+}
+a {
+  background-color: grey;
+  border-radius: 3px;
+  text-decoration: none;
+  text-decoration-color: black;
+  align-self: center;
+}
+
+ #pageHeader h2 {
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+ }
+ #friendlyMan {
+     max-height:40%;
+     width: auto;
+     align-self: center;
+     left: 50%;
+     border-radius: 5px;
+     border-image: url("giphy.gif") 25% repeat;
+ }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+ }
+}
