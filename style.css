@@ -60,7 +60,8 @@ header, footer, section, article, nav, div {
   color: white;
 }
 #oneSin {
-  background-color: grey;
+  background-color: black;
+  color: red;
   border-radius: 3px;
   text-decoration: none;
   text-decoration-color: black;
@@ -83,6 +84,16 @@ a {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+
+ }
+ .employeeGallery {
+     display: grid;
+     grid-gap: 3px;
+     grid-template-columns: repeat(auto-fit, minmax(250px,400px));
+
+ }
+ #officeWorkers {
+     width: 100%;
 
  }
  #friendlyMan {
