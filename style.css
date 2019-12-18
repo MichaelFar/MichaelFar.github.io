@@ -99,7 +99,7 @@ a {
  #friendlyMan {
      max-height:30%;
      width: auto;
-     align-self: center;
+
      left: 50%;
      border-radius: 5px;
      border-image: url("giphy.gif") 25% repeat;
