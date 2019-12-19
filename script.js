@@ -77,7 +77,7 @@ function setSentence(x) {
 function genPunishment(first, second, third) {
   console.log(" Num1: " + first + " Num2: " + second + " Num3: " + third);
   let names = [" Daffy Duck ", " Nicholas Cage ", " your elementary school bully ", " Pikachu ", " Santa ", " an angry parent ", " Satan ", " Charles Darwin ", " The Queen of England ", " your clone "];
-  let language = [" French "," Old English "," Spanish "," Japanese "," Latin "," Pig Latin "," Braille "," ASL "," Backwards English "," Morse Code "]
+  let language = [" French "," Swedish "," Spanish "," Japanese "," Latin "," Mesoamerican "," Nigerian "," Egyptian "," uɐᴉlɐɹʇsn∀ "," Extraterrestrial "]
   let creatures = [" an alligator "," Cerberus "," a mermaid "," a dragon "," several toddlers ", " the world leader of your choice " ," a lion "," a truly massive amount of snakes "," a Chimera "," an Alicorn "]
   let verb =
  [" read awful poetry ",
