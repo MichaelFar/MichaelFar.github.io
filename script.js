@@ -76,12 +76,35 @@ function setSentence(x) {
 
 function genPunishment(first, second, third) {
   console.log(" Num1: " + first + " Num2: " + second + " Num3: " + third);
-  let verb = [" read awful poetry ", " be stared at awkwardly ", " be subjected to easily the worst mongolian throat singing you've ever heard ", " be forced to watch someone perform a task poorly that you could easily help them with, but they are unwilling to accept help ", " be told three answers to mankinds greatest mysteries, but you are then told that two of them are lies ", " be given icecream, but it is pistachio and has been in the freezer for too long ", " be forced to give a public speech while the audience are all imagining you in your underwear ", " be trapped in a room with hundreds of film critics all criticizing your favorite movie in different ways ", " be forced to watch your worst enemy win the lottery ", " be forced to chew all the bubble gum in a gumball machine and they are all flavorless "," clean all outhouses you've ever been in with a toothbrush "," clean the litter boxes of tigers with irritable bowels "," take a test in a subject you've never heard of in old english and get 100% "," help " + (first + second) + " old ladies across the street while they hit you with their walking canes "," read a fanfiction of a spanish soap opera written by a 13 year old "," live in a snow-globe where the music box never stops "," fight Yoda and Darth Vader at the same time "," be tickled but you must not laugh "," potty train Cerberus ", " serve jury duty "];
+  let names = [" Daffy Duck ", " Nicholas Cage ", " your elementary school bully ", " Pikachu ", " Santa ", " an angry parent ", " Satan ", " Charles Darwin ", " The Queen of England ", " your clone "];
+  let language = [" French "," Old English "," Spanish "," Japanese "," Latin "," Pig Latin "," Braille "," ASL "," Backwards English "," Morse Code "]
+  let creatures = [" an alligator "," Cerberus "," a mermaid "," a dragon "," several toddlers ", " the world leader of your choice " ," a lion "," a truly massive amount of snakes "," a Chimera "," an Alicorn "]
+  let verb =
+ [" read awful poetry ",
+  " be stared at by"+creatures[second]+"awkwardly",
+  " be subjected to easily the worst mongolian throat singing you've ever heard ",
+  " be forced to watch someone perform a task poorly that you could easily help them with, but they are unwilling to accept help ",
+  " be told three answers to mankinds greatest mysteries, but you are then told that two of them are lies ",
+  " be given icecream, but it is pistachio and has been in the freezer for too long ",
+  " be forced to give a public speech while the audience are all imagining you in your underwear ",
+  " be trapped in a room with hundreds of film critics all criticizing your favorite movie in different ways ",
+  " be forced to watch your worst enemy win the lottery ",
+  " be forced to chew all the bubble gum in a gumball machine and they are all flavorless ",
+  " clean all outhouses you've ever been in with a toothbrush ",
+  " clean the bathroom of "+creatures[third]+ "with irritable bowels ",
+  " take a test in a subject you've never heard of in" +language[second]+"and get 100% ",
+  " help " + (first + second) + " old ladies across the street while they hit you with their walking canes ",
+  " read a fanfiction of a spanish soap opera written by a 13 year old ",
+  " live in a snow-globe where the music box never stops ",
+  " fight" +names[second]+ "and" +names[third]+ "at the same time ",
+  " be tickled but you must not laugh ",
+  " potty train"+creatures[second],
+  " serve jury duty "];
   //console.log("Verb is " + verb.length);
 
   let sentenceLength = [" a quadrillion years ", " as long as I find that entertaining ", " I don't know maybe a day or two ", " a really really long time, like a SUPER-DUPER LONG TIME ", " as long as it takes for all the paint in existence to dry ", " " + (first + third) + " years or whenever the mole-people finally rise up ", " until humans meet aliens ", " as long as it takes for you to make the best of your situation ", " as long as they continue to make Simpsons episodes ", "ever "];
 
-  let location = [" underwater and upside down", " in a volcano", " at your birthday party when you were 8", " next to a polar bear at the north pole", " at a circus with clown makeup on", " in the middle of a dodgeball game and the balls are made of metal", " you are in space, but you forgot your spacesuit", " you are inside a Quentin Tarintino movie and you just made Samuel L Jackson angry", " spinning way too fast", " Garfield watches"];
+  let location = [" underwater and upside down", " in a volcano", " at your birthday party when you were 8", " next to "+ names[second] + "at the north pole", " at a circus with clown makeup on", " in the middle of a dodgeball game and the balls are made of metal", " you are in space, but you forgot your spacesuit", " you are inside a Quentin Tarintino movie and you just made Samuel L Jackson angry", " spinning way too fast", names[second] + " watches"];
 
   let finalSentence = "You will" + verb[first - 1] + "while" + location[third] + ". For" + sentenceLength[second];
   console.log(finalSentence);
