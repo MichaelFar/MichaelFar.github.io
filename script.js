@@ -81,7 +81,7 @@ function genPunishment(first, second, third) {
   let creatures = [" an alligator "," Cerberus "," a mermaid "," a dragon "," several toddlers ", " the world leader of your choice " ," a lion "," a truly massive amount of snakes "," a Chimera "," an Alicorn "]
   let verb =
  [" read awful poetry ",
-  " be stared at by"+creatures[second]+"awkwardly",
+  " be stared at by"+creatures[second]+"awkwardly ",
   " be subjected to easily the worst mongolian throat singing you've ever heard ",
   " be forced to watch someone perform a task poorly that you could easily help them with, but they are unwilling to accept help ",
   " be told three answers to mankinds greatest mysteries, but you are then told that two of them are lies ",
