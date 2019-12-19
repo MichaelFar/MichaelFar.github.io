@@ -94,7 +94,7 @@ function genPunishment(first, second, third) {
   " clean the bathroom of "+creatures[third]+ "with irritable bowels ",
   " take a test in a subject you've never heard of in" +language[second]+"and get 100% ",
   " help " + (first + second) + " old ladies across the street while they hit you with their walking canes ",
-  " read a fanfiction of a spanish soap opera written by a 13 year old ",
+  " read a fanfiction of a "+ language[third] +"soap opera written by a 13 year old ",
   " live in a snow-globe where the music box never stops ",
   " fight" +names[second]+ "and" +names[third]+ "at the same time ",
   " be tickled but you must not laugh ",
